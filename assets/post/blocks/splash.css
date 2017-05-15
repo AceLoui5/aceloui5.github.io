@@ -1,0 +1,107 @@
+/* =============================================================================
+
+    SPLASH CSS
+    Authored by Josh Beveridge
+
+============================================================================= */
+.splash {
+    background: black;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    width: 100vw;
+}
+.splash__content-block {
+    padding: 3rem 0 0 0;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+
+    @media $(l-tablet) {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translate(0, -50%);
+    }
+
+    @media $(desktop) {
+        right: 15%;
+    }
+
+}
+
+.splash__label {
+    color: $white;
+    font-family: $font-futura;
+    font-weight: 300;
+    margin: 0;
+
+    @media $(desktop) {
+        font-size: 2rem;
+    }
+
+    span {
+        margin: 0 1rem;
+
+        @media $(desktop) {
+            margin: 0 1.5rem;
+        }
+
+    }
+
+}
+
+.splash__title {
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    display: inline-block;
+    color: $white;
+    font-family: $font-freight;
+    font-weight: 800;
+    margin: 2rem;
+    text-transform: uppercase;
+
+    @media $(l-tablet) {
+        font-size: 3rem;
+    }
+
+    @media $(desktop) {
+        font-size: 5rem;
+        margin: 3rem;
+    }
+
+}
+
+.splash__link {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    transition: color .2s ease;
+}
+
+.no-touchevents {
+
+    .splash__link:hover {
+        color: $gold;
+        transition: color .2s ease;
+    }
+
+}
+
+.splash__photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    @media $(l-tablet) {
+        height: 90%;
+        width: auto;
+    }
+
+    @media $(desktop) {
+        height: 95%;
+    }
+
+}

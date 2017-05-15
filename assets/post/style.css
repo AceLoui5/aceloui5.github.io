@@ -1,8 +1,7 @@
 /* =============================================================================
 
-    PRIMARY CSS
-    Property of Norex
-    Authored by Josh Beveridge and Justin Bellefontaine
+    STYLE CSS
+    Authored by Josh Beveridge
 
 ============================================================================= */
 
@@ -17,12 +16,6 @@
     /* Spec: Typography ===================================================== */
     @import 'spec/typography.css';
 
-    /* Spec: Forms ========================================================== */
-    @import 'spec/forms/forms-base.css';
-
-    /* Spec: Spec > Plugins: UI Datepicker ================================== */
-    /*@import 'spec/plugins/uidatepicker.css';*/
-
 /* LAYOUT =================================================================== */
 
     /* Layout: Grid ========================================================= */
@@ -31,13 +24,7 @@
     /* Layout: Grid (IE11) ================================================== */
     @import 'layout/grid-ie11.css';
 
-    /* Layout: Header ======================================================= */
-    @import 'layout/header.css';
-
-    /* Layout: Footer ======================================================= */
-    @import 'layout/footer.css';
-
 /* BLOCKS =================================================================== */
 
-    /* Blocks: Hero (Slick Carousel) ======================================== */
-    @import 'blocks/landing-hero.css';
+    /* Blocks: Splash ======================================================= */
+    @import 'blocks/splash.css';
